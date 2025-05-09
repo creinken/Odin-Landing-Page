@@ -1,12 +1,18 @@
 * {
     font-family: Roboto;
+    margin: 0;
+    padding: 0;
 }
 
-.header, .page-content, .footer {
+.header, .footer {
     padding: 0px 256px;
 }
 
-a, .left-half p, .call-to-action, button {
+.header .logo-bar {
+    padding: 18px 0px;
+}
+
+a, .left-half p, button {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
@@ -20,7 +26,7 @@ button {
 
 .header, .footer {
     background-color: #1F2937;
-    color: #f9FAF8;
+    color: #F9FAF8;
 }
 
 .header .logo-bar h3 {
@@ -34,6 +40,13 @@ button {
 
 .site-head {
     display: flex;
+    padding: 100px 0px;
+    gap: 40px;
+}
+
+.site-head h1 {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .site-head .left-half, .site-head .right-half {
@@ -41,12 +54,11 @@ button {
     flex-grow: 1;
 }
 
-/* .site-head .right-half {
-    justify-content: center;
-    align-items: center;
-} */
+.site-head p {
+    padding-bottom: 15px;
+}
 
-.info h2 {
+h2 {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
@@ -58,9 +70,14 @@ button {
     align-items: center;
 }
 
+.info h2 {
+    padding: 50px 0px;
+}
+
 .cards {
     display: flex;
     gap: 60px;
+    padding-bottom: 100px;
 }
 
 .card {
@@ -83,7 +100,7 @@ button {
     background-color: #E5E7EB;
     font-size: 36px;
     color: #1F2937;
-    width: 800px;
+    padding: 150px 420px;
 }
 
 .quote p {
@@ -91,8 +108,34 @@ button {
     text-align: right;
 }
 
+.call-to-action {
+    width: 1000px;
+    border-radius: 10px;
+    color: #E5E7EB;
+    display: flex;
+    padding: 40px 60px;
+}
+
+.call-to-action h3 {
+    color: #E5E7EB;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.call-left-side {
+    flex-grow: 2;
+}
+
+.call-right-side {
+    flex-grow: 1;
+}
+
 .call-to-action, button {
     background-color: #3882F6;
+}
+
+.call-to-action button {
+    border-color: #E5E7EB;
 }
 
 .logo-bar {
@@ -103,5 +146,5 @@ button {
 
 .footer {
     text-align: center;
-    padding: 10px 0px;
+    padding: 40px 0px;
 }
